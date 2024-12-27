@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Ostro Batteries</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <style>
+  html { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}
+  .button
+  {
+    background-color: #3369FF;
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    border-radius:0.15em;
+    box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+    text-decoration: none; font-size: 24px;
+    margin: 2px; cursor: pointer;
+  }
+  @keyframes blink {
+    100%,
+    0% { fill: #ff0000; }
+    60% { fill: #00ff00; }
+  }
+  .greenstatus { fill: #00ff00; }
+  .redstatus { animation: blink 3.8s infinite; }
+  .redbutton { background-color: red; }
+  .greenbutton { background-color: DarkGreen; }
+  .yellowbutton { background-color: yellow; color: black; }
+  .buttonwide { width: 100%; }
+  .inputnumber { font-size: 20px; }
+  .hide { display: none; }
+  label { display: inline-block; vertical-align: top; text-align: left;       }
+  .table { margin-right: auto; margin-left: auto;       }
+</style> </head>
+  <body>
+    <h1>Ostro Batteries</h1>
+    <h2 style="font-size:5vw">Domestic Volts (V)</h2>
+    <iframe width="80%" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1659900/charts/1?width=auto&height=auto&bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Domestic+Volts+%28V%29&type=line"
+
+      height="260" width="100%"></iframe>
+    <p></p>
+    <h2 style="font-size:5vw">Starter Volts (V)</h2>
+    <iframe width="80%" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1659900/charts/2?width=auto&height=auto&bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Starter+Volts+%28V%29&type=line"></iframe>
+
+    <p></p>
+    <h2 style="font-size:5vw">Domestic Current (A)</h2>
+    <iframe width="80%" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1659900/charts/3?width=auto&height=auto&bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Domestic+Current+%28A%29&type=line"></iframe>
+
+    <p></p>
+    <h2 style="font-size:5vw">State of Charge (percentage)</h2>
+    <iframe width="80%" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1659900/charts/4?width=auto&height=auto&bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=State+Of+Charge+%28Percentage%29&type=line"></iframe>
+
+    <p></p>
+    <h2 style="font-size:5vw">Time To Go (hours)<h2>
+    <iframe width="80%" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1659900/charts/5?width=auto&height=auto&bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Time+To+Go+%28Hours%29&type=line"></iframe>
+    <p></p>
+    <h2 style="font-size:5vw">Instantaneous Power (W)</h2>
+    <iframe width="80%" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1659900/charts/6?width=auto&height=auto&bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Instantaneous+Power+%28W%29&type=line"></iframe>
+
+    <p></p>
+    <h2 style="font-size:5vw">Depth of Last Discharge</h2>
+    <iframe width="80%" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1659900/charts/7?width=auto&height=auto&bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Depth+of+the+last+discharge+%28Ah%29&type=line"></iframe>
+
+  </body>
+</html>
